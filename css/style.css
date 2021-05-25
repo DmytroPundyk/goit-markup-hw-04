@@ -28,6 +28,7 @@ body {
 .hero-part .container,
 .business-part .container,
 .our-team .container,
+.customers .container,
 .footer-part .container ,
 .portfolio-content .container {
    flex-direction: column; 
@@ -67,54 +68,73 @@ body {
 .navigation-list {
    width: 294px;
    margin-left:93px;
-   padding: 32px 0;
 }
 .navigation-list li{
    margin-right: 50px;
 }
 .contacts-list {
-   margin-left:331px;
+   margin-left:305px;
 }
 .contacts-list li:last-child {
-   margin-left: 50px;
+   margin-left: 30px;
 }
-.contacts-list .link {
-   padding: 32px 0;
+
+.contact-icon {
+   margin-right: 10px;
+   fill: var(--second-text-color);
+   
 }
+
 /* список навигации и список контактов*/
 .header-part ul {
    display: flex;
 }
 /* стилизации ссылок навигации и контактов*/
 .navigation-list a {
+   display: block;
    font-weight: 500;
    font-size:inherit;
    line-height: inherit;
    letter-spacing: 0.02em;
    color: var(--main-text-color);
    text-decoration: none;
+   padding: 32px 0;
 }
-.contacts-list a{
+.contacts-list a {
+   display: block;
    text-decoration: none;
    font-weight: 500;
    font-size: inherit;
    line-height: inherit;
    letter-spacing: 0.02em;
    color: var(--second-text-color);
- 
+   padding: 32px 0;
 }
 .navigation-list a:hover,
-.contacts-list a:hover,
+.contacts-list-link:hover,
 .navigation-list a:focus,
-.contacts-list a:focus,
+.contacts-list-link:focus,
 a.active {
-   color: var(--special-color);
+ color: var(--special-color);
+}
+.contact-icon:hover,
+.contact-icon:focus {
+ fill: var(--special-color);
 }
 
 /* оформление страницы studio */
 /* Hero сайта */
 .hero-part {
+   height: 600px;
+   max-width: 1600px;
+   margin: 0 auto;
    background: var(--bg-hero-footer);
+   background-image:linear-gradient( to right,rgba(47, 48, 58, 0.4),
+   rgba(47, 48, 58, 0.4)),
+   url(../images/Img.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position:center ;
    padding:200px 0 200px 0;
 }
 
@@ -163,13 +183,18 @@ a.active {
 }
 .features-part li {
    width: 270px;
-   margin-right:var(--basic-card-gap);
+   margin-right:var(--basic-card-gap);  
 }
+.features-part li:last-child{
+   margin-right: 0;
+}
+
 .features-part h3 {
    text-transform: uppercase;
    font-size: inherit;
    font-weight: 700;
    line-height: inherit;
+   margin-top: var(--basic-card-gap);
 }
 .features-part p {
    margin-top: 10px;
@@ -242,6 +267,20 @@ a.active {
    margin-top: 10px;
    color: var(--second-text-color);
  
+}
+.customers {
+   padding: 94px 0 94px 0;
+}
+.customers h2 {
+   font-weight: bold;
+   font-size: 36px;
+   line-height: 1.166;
+   text-align: center;
+   letter-spacing: inherit;
+}
+.customers ul {
+   display: flex;
+   margin-top: 50px;
 }
 /* секция подвал сайта */
 .footer-part {
@@ -319,7 +358,7 @@ margin-bottom: 0;
 .filter-list button:focus {
    background: var(--special-color);
    color:var(--main-color);
-   box-shadow: 1px 3px 1px 0px rgba(0, 0, 0, 0.3);
+   box-shadow: 1px 3px 1px 0px #0000004d;
    cursor: pointer;
 }
 /* примеры страницы Portfolio */
@@ -329,8 +368,14 @@ margin-bottom: 0;
    display:flex;
    flex-wrap: wrap;
   }
-.pattern-list a {
+  .pattern-list a {
+     text-decoration: none;
+  }
+.pattern-list li:hover,
+.pattern-list li:focus {
    text-decoration: none;
+   box-shadow: 0px 1px 1px #0000001f,
+    0px 4px 4px #0000000f, 1px 4px 6px #00000029;
 }
 .pattern-list li{
    background-color: var(--main-color);
