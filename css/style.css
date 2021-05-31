@@ -289,7 +289,7 @@ margin-top: 16px;
 .team-social-icon {
    height: 20px;
    width: 20px;
-   fill:var(--second-text-color);
+   fill:rgba(175, 177, 184, 1);
 }
 .team-social-icon:hover,
 .team-social-icon:focus{
@@ -318,8 +318,8 @@ margin-top: 16px;
    width: 170px;
    height: 92px;
    border-radius: 4px;
-   color:var(--second-text-color);
-   border: 1px solid var(--second-text-color);
+   color:rgba(175, 177, 184, 1);
+   border: 1px solid rgba(175, 177, 184, 1);
     padding: 16px 32px;
 }
 .customer-icon {
