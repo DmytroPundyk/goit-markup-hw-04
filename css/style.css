@@ -119,10 +119,6 @@ body {
 a.active {
  color: var(--special-color);
 }
-/* .contact-icon:hover,
-.contact-icon:focus {
- fill: var(--special-color);
-} */
 
 /* оформление страницы studio */
 /* Hero сайта */
@@ -181,12 +177,7 @@ a.active {
    width: 1px;
    height: 1px;
    margin: -1;
-   border: 0;
-   padding: 0;
-   white-space: nowrap;
-   clip-path: inset(100%);
    clip: rect(0 0 0 0);
-   overflow: hidden;
 }
 .features-part ul {
    width: 100%;
@@ -336,10 +327,6 @@ margin-top: 16px;
    height: 60px; 
    fill: currentColor; 
 }
-/* .customer-icon:hover,
-.customer-icon:focus{ 
- fill:var(--special-color);
-} */
 .customers a:hover,
 .customers a:focus{
    border: 1px solid var(--special-color);
