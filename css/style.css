@@ -95,21 +95,24 @@ body {
    display:block;
    font-weight: 500;
    font-size:inherit;
-   line-height: 1.192;
+   line-height: 1.142;
    letter-spacing: 0.02em;
    color: var(--main-text-color);
    text-decoration: none;
    padding: 32px 0 32px 0;
 }
 .contacts-list-link {
-   display: block;
+   display: flex;
+   align-items: center;
+   text-align: center;
    text-decoration: none;
    font-weight: 500;
-   font-size: inherit;
-   line-height: 1.192;
+   font-size:inherit;
+   line-height: 1.142;
    letter-spacing: 0.02em;
    color: var(--second-text-color);
-   padding:32px 0 32px 0;
+   padding-top: 32px;
+   padding-bottom: 32px;
 }
 
 .navigation-list a:hover,
@@ -278,24 +281,23 @@ margin-top: 16px;
 .team-social-link {
    display:block;
    border-radius: 50%;
-  background-color: var(--main-color);
-   width: 44px;
+  background-color: none;
+  color: rgba(175, 177, 184, 1);
+  width: 44px;
    height: 44px; 
    padding: 12px; 
 }
 .team-social-link:hover,
 .team-social-link:focus{
  background-color: var(--special-color); 
+ color:var(--main-color);
 }
 .team-social-icon {
    height: 20px;
    width: 20px;
-   fill:rgba(175, 177, 184, 1);
+   fill:currentColor;
 }
-.team-social-icon:hover,
-.team-social-icon:focus{
-  fill:var(--main-color);
-}
+
 /* секция клиенты */
 .customers {
    padding: 94px 0 94px 0;
