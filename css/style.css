@@ -160,6 +160,7 @@ a.active {
    line-height: 1.875;
    letter-spacing: 0.06;
    background:var(--special-color);
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
    border-radius: 4px;
    border: 0;
    padding:10px 32px;
@@ -277,7 +278,7 @@ margin-top: 16px;
 .team-social-link {
    display:block;
    border-radius: 50%;
-   background-color: var(--main-color);
+  background-color: var(--main-color);
    width: 44px;
    height: 44px; 
    padding: 12px; 
