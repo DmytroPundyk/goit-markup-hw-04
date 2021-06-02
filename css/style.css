@@ -375,7 +375,8 @@ margin-bottom: 9px;
 .footer-addres-list .white{
    color: var(--main-color);
 }
-.footer-part ul a:hover {
+.footer-part ul a:hover,
+.footer-part ul a:focus{
    color: var(--special-color);
 }
 .container-sociallink {
@@ -468,14 +469,13 @@ margin-bottom: 9px;
      text-decoration: none;
   }
 
-.pattern-list li:hover{
+.pattern-list .pattern-link:hover,
+.pattern-link .pattern-link:focus{
    box-shadow: 0px 1px 1px #0000001f,
     0px 4px 4px #0000000f, 1px 4px 6px #00000029;
 }
-.pattern-list li:focus{
-   box-shadow: 0px 1px 1px #0000001f,
-   0px 4px 4px #0000000f, 1px 4px 6px #00000029;
-}
+  
+
 .pattern-list li{
    background-color: var(--main-color);
    flex-basis: calc(100%/3 -30px);
